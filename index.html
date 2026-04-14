@@ -284,7 +284,7 @@ function cover(c){
     +mkGrid('dk')
     +'<div style="position:absolute;font-family:Roboto Mono,monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:'+tg+';top:32px;left:32px;z-index:4;">abdtours.com</div>'
     +'<div style="position:absolute;font-family:Poppins,sans-serif;font-weight:900;font-size:200px;right:-15px;bottom:-45px;line-height:1;letter-spacing:-.05em;color:#F5F0E8;opacity:.03;z-index:1;pointer-events:none;">'+d+'</div>'
-    +'<div style="position:absolute;left:32px;right:32px;top:50%;transform:translateY(-55%);z-index:4;">'
+    +'<div style="position:absolute;left:32px;right:32px;top:130px;z-index:4;">'
       +'<div style="font-family:Playfair Display,serif;font-style:italic;font-weight:900;font-size:'+iF+'px;line-height:.93;letter-spacing:-.02em;color:#F5F0E8;margin-bottom:8px;">'+c.i+'</div>'
       +'<div style="font-family:Poppins,sans-serif;font-weight:900;font-size:'+bF+'px;line-height:.88;letter-spacing:-.02em;text-transform:uppercase;color:'+tg+';margin-bottom:18px;">'+c.b+'</div>'
       +'<div style="width:70px;height:3px;background:#B8952A;margin-bottom:14px;"></div>'
@@ -300,15 +300,13 @@ function csli(c,sl,idx,tot){
   var tp=dk?'#F5F0E8':'#0A0A0A';
   var ts=dk?'#C4B49A':'#3D3020';
   var tm=dk?'rgba(90,78,56,0.55)':'rgba(90,78,56,0.55)';
-  var tg='#B8952A';
   var base='position:relative;width:100%;height:100%;overflow:hidden;background:'+bg+';';
-  var cnt_top='position:absolute;top:0;left:0;right:0;bottom:0;';
 
   if(sl.k==='ctx'){
     return '<div style="'+base+'">'
       +'<div style="position:absolute;top:20px;right:24px;font-family:Roboto Mono,monospace;font-size:9px;letter-spacing:.12em;color:'+tm+';">'+n+'/'+tot+'</div>'
       +'<div style="position:absolute;bottom:20px;left:32px;font-family:Roboto Mono,monospace;font-size:9px;letter-spacing:.12em;color:rgba(184,149,42,.35);">abdtours.com</div>'
-      +'<div style="position:absolute;left:44px;right:44px;top:50%;transform:translateY(-50%);">'
+      +'<div style="position:absolute;left:44px;right:44px;top:145px;">'
         +'<span style="display:block;font-family:Roboto Mono,monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:'+tm+';margin-bottom:14px;">'+sl.l+'</span>'
         +'<p style="font-family:Poppins,sans-serif;font-size:15px;line-height:1.7;color:'+ts+';margin:0;">'+sl.b+'</p>'
       +'</div>'
@@ -319,8 +317,7 @@ function csli(c,sl,idx,tot){
     return '<div style="'+base+'">'
       +'<div style="position:absolute;top:20px;right:24px;font-family:Roboto Mono,monospace;font-size:9px;letter-spacing:.12em;color:'+tm+';">'+n+'/'+tot+'</div>'
       +'<div style="position:absolute;bottom:20px;left:32px;font-family:Roboto Mono,monospace;font-size:9px;letter-spacing:.12em;color:rgba(184,149,42,.35);">abdtours.com</div>'
-      +'<div style="position:absolute;font-family:Poppins,sans-serif;font-weight:900;font-size:155px;right:-8px;bottom:-18px;line-height:1;letter-spacing:-.05em;color:'+tp+';opacity:.04;pointer-events:none;">'+sl.n+'</div>'
-      +'<div style="position:absolute;left:44px;right:44px;top:50%;transform:translateY(-50%);">'
+      +'<div style="position:absolute;left:44px;right:44px;top:130px;">'
         +'<div style="width:40px;height:3px;background:#B8952A;margin-bottom:18px;"></div>'
         +'<div style="font-family:Poppins,sans-serif;font-weight:800;font-size:'+hF+'px;line-height:1.2;color:'+tp+';letter-spacing:-.01em;margin-bottom:14px;">'+sl.h+'</div>'
         +'<p style="font-family:Poppins,sans-serif;font-size:14px;line-height:1.7;color:'+ts+';margin:0;">'+sl.b+'</p>'
@@ -331,8 +328,7 @@ function csli(c,sl,idx,tot){
     return '<div style="'+base+'">'
       +'<div style="position:absolute;top:20px;right:24px;font-family:Roboto Mono,monospace;font-size:9px;letter-spacing:.12em;color:'+tm+';">'+n+'/'+tot+'</div>'
       +'<div style="position:absolute;bottom:20px;left:32px;font-family:Roboto Mono,monospace;font-size:9px;letter-spacing:.12em;color:rgba(184,149,42,.35);">abdtours.com</div>'
-      +'<div style="position:absolute;font-family:Poppins,sans-serif;font-weight:900;font-size:110px;right:-6px;bottom:-14px;line-height:1;letter-spacing:-.05em;color:'+tp+';opacity:.04;pointer-events:none;">'+sl.g+'</div>'
-      +'<div style="position:absolute;left:44px;right:44px;top:50%;transform:translateY(-50%);">'
+      +'<div style="position:absolute;left:44px;right:44px;top:170px;">'
         +'<div style="width:40px;height:3px;background:#B8952A;margin-bottom:20px;"></div>'
         +'<p style="font-family:Playfair Display,serif;font-style:italic;font-weight:700;font-size:24px;line-height:1.42;color:'+tp+';margin:0;">'+sl.p+'</p>'
       +'</div>'
@@ -341,10 +337,10 @@ function csli(c,sl,idx,tot){
   if(sl.k==='cl'){
     return '<div style="'+base+'">'
       +'<svg style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1;" viewBox="0 0 540 540" fill="none">'
-      +'<path d="M44 90L44 44L90 44" stroke="'+( dk?'rgba(255,255,255,.1)':'rgba(0,0,0,.1)')+'" stroke-width="2"/>'
+      +'<path d="M44 90L44 44L90 44" stroke="'+(dk?'rgba(255,255,255,.1)':'rgba(0,0,0,.1)')+'" stroke-width="2"/>'
       +'<path d="M496 450L496 496L450 496" stroke="'+(dk?'rgba(255,255,255,.1)':'rgba(0,0,0,.1)')+'" stroke-width="2"/>'
       +'</svg>'
-      +'<div style="position:absolute;left:44px;right:44px;top:50%;transform:translateY(-50%);z-index:2;">'
+      +'<div style="position:absolute;left:44px;right:44px;top:110px;z-index:2;">'
         +'<span style="display:block;font-family:Roboto Mono,monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:'+tm+';margin-bottom:20px;">Get in Touch</span>'
         +'<p style="font-family:Playfair Display,serif;font-style:italic;font-weight:700;font-size:26px;line-height:1.3;color:'+tp+';margin:0 0 22px;">'+sl.h+'</p>'
         +'<div style="height:3px;width:50px;background:#B8952A;margin-bottom:20px;"></div>'
